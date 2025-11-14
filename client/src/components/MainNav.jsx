@@ -2,8 +2,17 @@
 // import { Menu, Moon, Sun, X } from "lucide-react";
 // import { useState } from "react";
 
+import LoginButton from "./LoginButton";
+import LogoutButton from "./LogoutButton";
+import Profile from "./Profile";
+
 const MainNav = () => {
-  return <div>MainNav</div>;
+  return (
+    <div>
+      <LoginButton />
+      <LogoutButton />
+    </div>
+  );
 };
 export default MainNav;
 
