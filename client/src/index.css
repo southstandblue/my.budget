@@ -6,9 +6,20 @@
 
 @theme {
   --font-appFont: montserrat, sans-serif;
-  --color-container-light: #e8f1f2;
-  --color-border-light: #13293d;
-  --color-text-light: var(--color-blue-950);
+
+  /* Light Mode */
+  --color-container-mode-light: #e8f1f2;
+  --color-border-mode-light: #13293d;
+  --color-text-mode-light: var(--color-blue-950);
+  --color-button-bg-mode-light: #006494;
+  --color-button-text-mode-light: #e8f1f2;
+
+  /* Dark Mode */
+  --color-container-mode-dark: #000000;
+  --color-border-mode-dark: #e8f1f2;
+  --color-text-mode-dark: #e8f1f2;
+  --color-button-bg-mode-dark: #e8f1f2;
+  --color-button-text-mode-dark: #006494;
 }
 
 /*
