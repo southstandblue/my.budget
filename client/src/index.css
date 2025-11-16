@@ -22,6 +22,16 @@
   --color-button-text-mode-dark: #006494;
 }
 
+@layer components {
+  .primaryButton {
+    @apply bg-button-bg-mode-light text-button-text-mode-light hover:bg-button-text-mode-light hover:text-button-bg-mode-light
+       dark:bg-button-bg-mode-dark dark:text-button-text-mode-dark dark:hover:bg-button-text-mode-dark dark:hover:text-button-bg-mode-dark;
+  }
+  .primaryText {
+    @apply text-text-mode-light/85 dark:text-text-mode-dark;
+  }
+}
+
 /*
 #13293D
 #006494

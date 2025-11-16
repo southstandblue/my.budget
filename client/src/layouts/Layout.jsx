@@ -6,8 +6,14 @@ const Layout = ({ children }) => {
       {/* Navbar */}
       <Navbar />
 
+      {/* hero image goes here */}
+      {/* {showHero && <Hero />} */}
+
       {/* Content */}
       <div className="container mx-auto flex-1 py-10">{children}</div>
+
+      {/* Footer */}
+      {/* <Footer /> */}
     </div>
   );
 };
