@@ -31,26 +31,18 @@ const MobileNav = ({ darkMode, toggleMode }) => {
           onClick={() => setMobileMenu(!mobileMenu)}
         >
           {mobileMenu ? (
-            <X size={24} className="primaryText z-10" />
+            <X size={24} className="primaryText z-1" />
           ) : (
             <Menu size={24} className="primaryText" />
           )}
         </button>
       </div>
 
-      {/* <div
-        className={`absolute top-25 right-0 bg-blue-400 w-[60%] h-full p-10 ${
-          mobileMenu ? "translate-x-0" : "translate-x-full"
-        } ease-in-out duration-300`}
-      >
-        This is the sidebar
-      </div> */}
-
       <div
         className={`absolute flex flex-col bg-container-mode-light dark:bg-container-mode-dark border border-border-mode-light dark:border-border-mode-dark p-3 space-y-3 
            sm:w-[25%] w-[45%] top-18 shadow-xl rounded-xl ${
              mobileMenu ? "translate-x-0 right-5" : "translate-x-full"
-           } ease-in duration-500`}
+           } ease-in duration-500 z-50`}
       >
         {isAuthenticated ? (
           <>
