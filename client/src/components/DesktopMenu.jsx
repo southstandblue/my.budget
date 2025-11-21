@@ -8,8 +8,12 @@ const DesktopMenu = ({ darkMode, toggleMode }) => {
   const toggleLoginOrLogout = () => {
     if (isAuthenticated) {
       logout({ logoutParams: { returnTo: window.location.origin } });
+      // remove the isAuthenticated from the redux store
     } else {
       loginWithRedirect();
+      // store the isAuthenticated in the redux store
+      // get the initial settings from the api
+      // Store them in the redux store
     }
   };
 
